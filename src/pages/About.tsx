@@ -2,11 +2,9 @@ import { Card } from "@/components/ui/card";
 import { Mail, ExternalLink } from "lucide-react";
 
 const teamMembers = [
-  { name: "Bedant Gautam", email: "bdntx1@gmail.com" },
+  { name: "Aayush Baral", email: "office@baral-aayush.com.np" },
   { name: "Pratyush Subedi", email: "pratyushsubedi60@gmail.com" },
-  { name: "Ashish Rana", email: "ahishrana34@gmail.com" },
-  { name: "Saksham Gyawali", email: "sakshamgyawali92@gmail.com" },
-  { name: "Sirjal Adhikari", email: "sirjaladhikari80@gmail.com" },
+  { name: "Aadarsha Nepal", email: "025neb710@sxc.edu.np" },
 ];
 
 const resources = [
