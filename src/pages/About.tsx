@@ -55,7 +55,6 @@ export default function About() {
     <div className="space-y-8">
       <div className="text-center space-y-2">
         <h1 className="text-4xl font-bold glow-text">About Us</h1>
-        <p className="text-muted-foreground">NASA Space Apps Challenge 2025</p>
       </div>
 
       <Card className="card-space p-8 bg-gradient-to-br from-primary/10 to-accent/10 border-primary/20">
