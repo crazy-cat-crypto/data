@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* NASA Space Theme - Dark Mode First */
+    --background: 222 47% 5%;
+    --foreground: 210 100% 98%;
+
+    --card: 222 40% 8%;
+    --card-foreground: 210 100% 98%;
+
+    --popover: 222 40% 10%;
+    --popover-foreground: 210 100% 98%;
+
+    /* Electric Cyan Primary */
+    --primary: 189 94% 55%;
+    --primary-foreground: 222 47% 5%;
+
+    /* Deep Space Secondary */
+    --secondary: 222 35% 15%;
+    --secondary-foreground: 210 100% 98%;
+
+    /* Muted Blue-Gray */
+    --muted: 222 30% 20%;
+    --muted-foreground: 210 20% 70%;
+
+    /* Solar Orange Accent */
+    --accent: 25 95% 60%;
+    --accent-foreground: 222 47% 5%;
+
+    /* Red Alert */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 100% 98%;
+
+    --border: 222 30% 20%;
+    --input: 222 35% 15%;
+    --ring: 189 94% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom NASA tokens */
+    --space-glow: 189 94% 55%;
+    --solar-glow: 25 95% 60%;
+    --star-white: 210 100% 98%;
+    
+    /* Gradients */
+    --gradient-space: linear-gradient(135deg, hsl(222, 47%, 5%) 0%, hsl(222, 40%, 10%) 50%, hsl(222, 35%, 8%) 100%);
+    --gradient-glow: radial-gradient(circle at center, hsl(189, 94%, 55% / 0.15), transparent 70%);
+    --gradient-card: linear-gradient(135deg, hsl(222, 40%, 8%) 0%, hsl(222, 35%, 10%) 100%);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 30px hsl(189, 94%, 55% / 0.3);
+    --shadow-card: 0 4px 20px hsl(222, 47%, 5% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: 
+      linear-gradient(180deg, 
+        rgba(12, 20, 30, 0.92) 0%, 
+        rgba(15, 25, 40, 0.88) 30%,
+        rgba(20, 35, 50, 0.85) 70%,
+        rgba(25, 40, 55, 0.90) 100%
+      ),
+      url('/earth-south-asia-hero.jpg');
+    background-size: cover;
+    background-position: center 40%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glow-text {
+    text-shadow: 0 0 20px hsl(var(--space-glow) / 0.5);
+  }
+  
+  .glow-border {
+    box-shadow: 0 0 20px hsl(var(--space-glow) / 0.3);
+  }
+
+  .card-space {
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+    border: 1px solid hsl(var(--border));
+  }
+}
