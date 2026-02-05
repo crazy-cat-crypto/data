@@ -38,13 +38,13 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-sm text-muted-foreground">wecode4earth@gmail.com</p>
+                    <p className="text-sm text-muted-foreground">office@baral-aayush.com.np</p>
                   </div>
                 </div>
                 <Button
                   variant="outline"
                   className="w-full"
-                  onClick={() => window.location.href = "mailto:wecode4earth@gmail.com"}
+                  onClick={() => window.location.href = "mailto:office@baral-aayush.com.np"}
                 >
                   <Mail className="mr-2 h-4 w-4" />
                   Send Email
@@ -65,7 +65,7 @@ export default function ContactUs() {
                 <Button
                   variant="outline"
                   className="w-full"
-                  onClick={() => window.location.href = "tel:976631144"}
+                  onClick={() => window.location.href = "tel:9856027896"}
                 >
                   <Phone className="mr-2 h-4 w-4" />
                   Call Now
