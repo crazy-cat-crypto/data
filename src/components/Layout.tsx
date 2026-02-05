@@ -313,7 +313,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       <footer className="border-t border-border/50 py-6 mt-12">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>CODE4EARTH • NASA Space Apps Challenge 2025</p>
           <p className="mt-1">Data sourced from Nepal Census 2021 & National Energy Authority</p>
         </div>
       </footer>
