@@ -87,8 +87,8 @@ export default function ContactUs() {
           <Card className="card-space">
             <CardContent className="pt-6">
               <p className="text-muted-foreground">
-                <strong>About CODE4EARTH:</strong> We're dedicated to using NASA data and technology 
-                to create sustainable solutions for Nepal and beyond. Join us in building a better future 
+                <strong>About Data:</strong> We're dedicatedto create sustainable solutions for Nepal and beyond.
+                Join us in building a better future 
                 through data-driven insights.
               </p>
             </CardContent>
